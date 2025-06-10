@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Exhibit — Final Project</title>
+  <style>
+    body {
+      background-color: #0c0c0c;
+      color: #ffffff;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: radial-gradient(#111111 1px, transparent 1px);
+      background-size: 16px 16px;
+    }
+
+    h1 {
+      color: #39ff14; /* bright green */
+      font-size: 2em;
+      margin-top: 1em;
+    }
+
+    nav {
+      margin: 1em 0;
+    }
+
+    nav a {
+      color: #ff55ff; /* neon magenta */
+      text-decoration: none;
+      margin: 0 0.5em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #39ff14;
+    }
+
+    .poster {
+      max-width: 600px;
+      width: 90%;
+      margin: 2em auto;
+      border: 2px solid #ff55ff;
+      border-radius: 4px;
+    }
+
+    .section {
+      margin: 2em auto;
+      max-width: 700px;
+      padding: 1em;
+      background-color: rgba(20, 20, 20, 0.8);
+    }
+
+    .tech-list li {
+      color: #99ff99;
+      margin-bottom: 0.5em;
+    }
+
+    .footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #66ff99;
+    }
+
+    a {
+      color: #66ccff;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+    
+        .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    .gallery img {
+      max-width: 300px;
+      width: 100%;
+      border: 2px solid #ff55ff;
+      border-radius: 4px;
+      background-color: #111;
+    }
+    
+  </style>
+</head>
+<body>
+
+<h1>open the exhibit</h1>
+
+<p style="color: #cccccc; max-width: 700px; margin: 0 auto 2em; font-size: 1em;">
+  A virtual space for showcasing digital art in an immersive way. This project emphasizes the atmosphere and aesthetic of an art installation using real time rendering techniques. Built in OpenGL, the exhibit invites users to explore and interact with the work in a fully navigable 3D environment.
+</p>
+  <img src="images/scene1.png" alt="Exhibit Poster" class="poster">
+
+  <div class="section">
+    <h2>Project Description</h2>
+<p>
+  This project combines traditional gallery sensibilities with the possibilities of real time 3D graphics. The virtual exhibit showcases digital artwork in a stylized, immersive space where viewers can move freely, observe pieces from different angles, and engage with the environment. Using OpenGL, the gallery is rendered with Blinn-Phong lighting, textured surfaces, and post processing effects such as CRT style distortion and color bleed, creating a nostalgic, analog era feel.
+</p>
+  </div>
+
+  <div class="section">
+    <h2>Graphics Tech</h2>
+    <ul class="tech-list">
+      <li>OpenGL Graphics Pipeline</li>
+      <li>Blinn-Phong Lighting</li>
+      <li>Texture Mapping</li>
+      <li>OBJ Model Loader</li>
+      <li>Custom CRT Post Processing Shader</li>
+      <li>Full camera and movement control</li>
+    </ul>
+  </div>
+  
+    <div class="section">
+    <h2>Images</h2>
+    <div class="gallery">
+      <img src="images/picture1.png" alt="Artwork 1">
+      <img src="images/picture2.png" alt="Artwork 2">
+      <img src="images/picture3.png" alt="Artwork 3">
+      <img src="images/picture4.png" alt="Artwork 4">
+    </div>
+  </div>
+
+<div class="section">
+  <h2>Demo Video</h2>
+  <p>
+    This video showcases a walkthrough of the interactive art exhibit, demonstrating the lighting, camera movement, shader effects, and how the viewer explores the gallery environment in real time.
+  </p>
+  <video width="560" height="315" controls>
+    <source src="images/demovideo.MOV" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="footer">
+  Made by <strong>Simon Shulevitz</strong> for CPE 471 — Spring 2025<br>
+  Thank you Omar.
+</div>
+
+</body>
+</html>
